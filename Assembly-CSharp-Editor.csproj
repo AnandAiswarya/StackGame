@@ -11,7 +11,7 @@
     <ProductVersion>10.0.20506</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <RootNamespace></RootNamespace>
-    <ProjectGuid>{171C7F6F-6ED2-9D45-3983-042DB7C3967A}</ProjectGuid>
+    <ProjectGuid>{94C6D9B4-1063-26CC-2D14-CCC6D9A6BC95}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <AssemblyName>Assembly-CSharp-Editor</AssemblyName>
@@ -304,32 +304,32 @@
  <Reference Include="UnityEditor.Android.Extensions">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.30f1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll</HintPath>
  </Reference>
- <Reference Include="log4netPlastic">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/PackageCache/com.unity.collab-proxy@1.8.0/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Plastic.Antlr3.Runtime">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/PackageCache/com.unity.collab-proxy@1.8.0/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
- </Reference>
- <Reference Include="Unity.Plastic.Newtonsoft.Json">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/PackageCache/com.unity.collab-proxy@1.8.0/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
- </Reference>
- <Reference Include="unityplastic">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/PackageCache/com.unity.collab-proxy@1.8.0/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
- </Reference>
- <Reference Include="JMRSDKIntent">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Assets/JMRSDK/Intent/Scripts/JMRSDKIntent.dll</HintPath>
+ <Reference Include="DOTween">
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Assets/JMRSDK/Core/Plugins/DOTween/DOTween.dll</HintPath>
  </Reference>
  <Reference Include="JMRSDK">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Assets/JMRSDK/Core/Scripts/JMRSDK.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Assets/JMRSDK/Core/Scripts/JMRSDK.dll</HintPath>
+ </Reference>
+ <Reference Include="JMRSDKIntent">
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Assets/JMRSDK/Intent/Scripts/JMRSDKIntent.dll</HintPath>
  </Reference>
  <Reference Include="JMRSDKUI">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Assets/JMRSDK/UI/Scripts/JMRSDKUI.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Assets/JMRSDK/UI/Scripts/JMRSDKUI.dll</HintPath>
  </Reference>
- <Reference Include="DOTween">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Assets/JMRSDK/Core/Plugins/DOTween/DOTween.dll</HintPath>
+ <Reference Include="log4netPlastic">
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/PackageCache/com.unity.collab-proxy@1.8.0/Lib/Editor/PlasticSCM/log4netPlastic.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Antlr3.Runtime">
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/PackageCache/com.unity.collab-proxy@1.8.0/Lib/Editor/PlasticSCM/Unity.Plastic.Antlr3.Runtime.dll</HintPath>
+ </Reference>
+ <Reference Include="Unity.Plastic.Newtonsoft.Json">
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/PackageCache/com.unity.collab-proxy@1.8.0/Lib/Editor/PlasticSCM/Unity.Plastic.Newtonsoft.Json.dll</HintPath>
+ </Reference>
+ <Reference Include="unityplastic">
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/PackageCache/com.unity.collab-proxy@1.8.0/Lib/Editor/PlasticSCM/unityplastic.dll</HintPath>
  </Reference>
  <Reference Include="nunit.framework">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/PackageCache/com.unity.ext.nunit@1.0.6/net35/unity-custom/nunit.framework.dll</HintPath>
  </Reference>
  <Reference Include="mscorlib">
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.30f1/Editor/Data/MonoBleedingEdge/lib/mono/4.7.1-api/mscorlib.dll</HintPath>
@@ -689,48 +689,48 @@
  <HintPath>C:/Program Files/Unity/Hub/Editor/2019.4.30f1/Editor/Data/MonoBleedingEdge/lib/mono/unityscript/Boo.Lang.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.TestRunner">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/UnityEditor.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.TestRunner">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/UnityEngine.TestRunner.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline.Editor">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.Timeline.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VSCode.Editor">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.VSCode.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro.Editor">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEngine.UI">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/UnityEngine.UI.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Timeline">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.Timeline.dll</HintPath>
  </Reference>
  <Reference Include="Unity.CollabProxy.Editor">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.CollabProxy.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.Rider.Editor">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.Rider.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.VisualStudio.Editor">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.VisualStudio.Editor.dll</HintPath>
  </Reference>
  <Reference Include="Unity.TextMeshPro">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.TextMeshPro.dll</HintPath>
  </Reference>
  <Reference Include="Unity.PlasticSCM.Editor">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/Unity.PlasticSCM.Editor.dll</HintPath>
  </Reference>
  <Reference Include="UnityEditor.UI">
- <HintPath>C:/Users/aishu/New Unity Project (2)/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
+ <HintPath>C:/Users/arush/NewStackGameVersion/StackGame/Library/ScriptAssemblies/UnityEditor.UI.dll</HintPath>
  </Reference>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="Assembly-CSharp.csproj">
-      <Project>{68935561-146A-092C-1CE2-388EF65D57EF}</Project>
+      <Project>{3868D236-5C1F-0F5D-94EA-E75462390686}</Project>
       <Name>Assembly-CSharp</Name>
     </ProjectReference>
   </ItemGroup>
