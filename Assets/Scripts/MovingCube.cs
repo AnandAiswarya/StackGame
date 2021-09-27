@@ -66,7 +66,7 @@ public partial class MovingCube : MonoBehaviour
         if (Mathf.Abs(hangover) >= max){
             LastCube = null;
             CurrentCube = null;
-            SceneManager.LoadScene(0);
+            SceneManager.LoadScene(1);
         }
         float direction = hangover>0 ? 1f : -1f;
         if (MoveDirection == MoveDirection.Z)

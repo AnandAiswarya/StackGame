@@ -150,7 +150,10 @@
      <Compile Include="Assets\JMRSDK\UI\Example\DEMO\Scripts\UIButtonSpawner.cs" />
      <Compile Include="Assets\Scripts\CubeSpawner.cs" />
      <Compile Include="Assets\Scripts\GameManager.cs" />
+     <Compile Include="Assets\Scripts\MoveDirection1.cs" />
      <Compile Include="Assets\Scripts\MovingCube.cs" />
+     <Compile Include="Assets\Scripts\NavigateScene.cs" />
+     <Compile Include="Assets\Scripts\ScoreText.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark01_UGUI.cs" />
      <Compile Include="Assets\TextMesh Pro\Examples &amp; Extras\Scripts\Benchmark02.cs" />
