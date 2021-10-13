@@ -1,9 +1,10 @@
 ﻿using System;
 using System.Collections;
 using System.Collections.Generic;
+using JMRSDK.InputModule;
 using UnityEngine;
 
-public class GameManager : MonoBehaviour
+public class GameManager : MonoBehaviour,ISelectHandler, ISelectClickHandler
 {
     private CubeSpawner[] spawners;
     private int spawnerIndex;
@@ -18,7 +19,7 @@ public class GameManager : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        if (Input.GetButtonDown("Fire1"))
+        if (OnSelectClicked())
         {
             if(MovingCube.CurrentCube != null)
                 MovingCube.CurrentCube.Stop();
@@ -30,5 +31,25 @@ public class GameManager : MonoBehaviour
             OnCubeSpawned();
         }
         
+    }
+
+    private bool OnSelectClicked()
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnSelectDown(SelectEventData eventData)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnSelectUp(SelectEventData eventData)
+    {
+        throw new NotImplementedException();
+    }
+
+    public void OnSelectClicked(SelectClickEventData eventData)
+    {
+        throw new NotImplementedException();
     }
 }
