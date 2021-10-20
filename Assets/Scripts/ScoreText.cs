@@ -9,6 +9,8 @@ public class ScoreText : MonoBehaviour
     AudioSource PerfectStackResponse, ImperfectStackResponse;
     [SerializeField]
     MovingCube caller;
+    [SerializeField]
+    MovingCube movingcube;
 
     private int score;
     private TextMeshProUGUI text;
@@ -16,6 +18,7 @@ public class ScoreText : MonoBehaviour
     {
         text = GetComponent<TMPro.TextMeshProUGUI>();
         GameManager.OnCubeSpawned += GameManager_OnCubeSpawned;
+        
     }
     private void OnDestroy()
     {
@@ -25,6 +28,13 @@ public class ScoreText : MonoBehaviour
     {
         score++;
         text.text = "Score: " + score;
+        //To increase speed as score increases
+        if (score % 5 == 0)
+        {
+            movingcube.moveSpeed += movingcube.speedIncrease;
+           
+        }
+
         //PerfectStackResponse.Play(0);
         float hangover = caller.GetHangover();
         if (caller.Audio(hangover) == true)

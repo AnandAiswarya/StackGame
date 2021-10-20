@@ -13,7 +13,8 @@ public partial class MovingCube : MonoBehaviour
     public static MovingCube LastCube {get; private set;}
     public MoveDirection MoveDirection { get; set; }
     [SerializeField]
-    private float moveSpeed = 1f;
+    public float moveSpeed = 1f;
+    public float speedIncrease = 1f;
 
     public bool XZ;
     private void OnEnable()
