@@ -5,6 +5,11 @@ using UnityEngine;
 
 public class ScoreText : MonoBehaviour
 {
+    [SerializeField]
+    AudioSource PerfectStackResponse, ImperfectStackResponse;
+    [SerializeField]
+    MovingCube caller;
+
     private int score;
     private TextMeshProUGUI text;
     private void Start()
@@ -20,6 +25,20 @@ public class ScoreText : MonoBehaviour
     {
         score++;
         text.text = "Score: " + score;
+        //PerfectStackResponse.Play(0);
+        float hangover = caller.GetHangover();
+        if (caller.Audio(hangover) == true)
+        {
+            PerfectStackResponse.Play();
+        }
+        else
+        {
+            ImperfectStackResponse.Play();
+        }
+
+
+
+
     }
 
 }

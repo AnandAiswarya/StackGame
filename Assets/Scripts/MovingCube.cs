@@ -6,11 +6,16 @@ using UnityEngine.SceneManagement;
 
 public partial class MovingCube : MonoBehaviour
 {
+    [SerializeField]
+    public AudioSource PerfectStackResponse, ImperfectStackResponse;
     public static MovingCube CurrentCube {get; private set;}
+    bool toggleChangePerfect = true, toggleChangeImperfect = true;
     public static MovingCube LastCube {get; private set;}
     public MoveDirection MoveDirection { get; set; }
     [SerializeField]
     private float moveSpeed = 1f;
+
+    public bool XZ;
     private void OnEnable()
     {
         if(LastCube==null)
@@ -23,25 +28,31 @@ public partial class MovingCube : MonoBehaviour
      {
          return new Color(UnityEngine.Random.Range(0,1f),UnityEngine.Random.Range(0,1f),UnityEngine.Random.Range(0,1f));
      }
-      private void SplitCubeOnX(float hangover, float direction)
+      public void SplitCubeOnX(float hangover, float direction)
      {
-        float newXSize = LastCube.transform.localScale.x - Mathf.Abs(hangover);
-         float fallingBlockSize = transform.localScale.x - newXSize;
-         float newXPosition = LastCube.transform.position.x + (hangover/2);
-         transform.localScale = new Vector3(newXSize, transform.localScale.y, transform.localScale.z);
-      transform.position = new Vector3(newXPosition,transform.position.y, transform.position.z);
-        float cubeEdge = transform.position.x + (newXSize/2f * direction);
-       float fallingBlockXPosition = cubeEdge + (fallingBlockSize/2f * direction);
-       var sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
-        sphere.transform.localScale=  Vector3.one * 0.1f;
-       sphere.transform.position= new Vector3(transform.position.x,transform.position.y,cubeEdge);
+        //Getting AudioSource
+
+        XZ = true;
+            float newXSize = LastCube.transform.localScale.x - Mathf.Abs(hangover);
+            float fallingBlockSize = transform.localScale.x - newXSize;
+            float newXPosition = LastCube.transform.position.x + (hangover/2);
+            transform.localScale = new Vector3(newXSize, transform.localScale.y, transform.localScale.z);
+            transform.position = new Vector3(newXPosition,transform.position.y, transform.position.z);
+            float cubeEdge = transform.position.x + (newXSize/2f * direction);
+            float fallingBlockXPosition = cubeEdge + (fallingBlockSize/2f * direction);
+            var sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
+            sphere.transform.localScale=  Vector3.one * 0.1f;
+            sphere.transform.position= new Vector3(transform.position.x,transform.position.y,cubeEdge);
+
 
         SpawnDropCube(fallingBlockXPosition,fallingBlockSize);
 
-     }
+
+    }
 
     private void SplitCubeOnZ(float hangover, float direction)
     {
+        XZ = false;
         float newZSize = LastCube.transform.localScale.z - Mathf.Abs(hangover);
         float fallingBlockSize = transform.localScale.z - newZSize;
         float newZPosition = LastCube.transform.position.z + (hangover/2);
@@ -52,8 +63,11 @@ public partial class MovingCube : MonoBehaviour
         var sphere = GameObject.CreatePrimitive(PrimitiveType.Sphere);
         sphere.transform.localScale=  Vector3.one * 0.1f;
         sphere.transform.position= new Vector3(transform.position.x,transform.position.y,cubeEdge);
+        
 
         SpawnDropCube(fallingBlockZPosition,fallingBlockSize);
+        //print(fallingBlockSize);
+
 
     }
     internal void Stop()
@@ -70,14 +84,54 @@ public partial class MovingCube : MonoBehaviour
         }
         float direction = hangover>0 ? 1f : -1f;
         if (MoveDirection == MoveDirection.Z)
-            SplitCubeOnZ(hangover,direction);
+        {
+            SplitCubeOnZ(hangover, direction);
+        }
         else
+        {
             SplitCubeOnX(hangover, direction);
-
+        }
 
         LastCube = this;
+
+
+        toggleChangePerfect = true;
+        toggleChangeImperfect = true;
     }
-    private float GetHangover()
+
+    public bool Audio(float hangover)
+    {
+        float fallingBlockSize,factor;
+        //PerfectStackResponse = GetComponent<AudioSource>();
+        //ImperfectStackResponse = GetComponent<AudioSource>();
+        if (XZ)
+        {
+            float newXSize = LastCube.transform.localScale.x - Mathf.Abs(hangover);
+            fallingBlockSize = transform.localScale.x - newXSize;
+            factor = fallingBlockSize/newXSize;
+            //print(hangover);
+        }
+        else
+        {
+            float newZSize = LastCube.transform.localScale.z - Mathf.Abs(hangover);
+            fallingBlockSize = transform.localScale.z - newZSize;
+            factor = fallingBlockSize/newZSize;
+            //print(hangover);
+        }
+
+        if (fallingBlockSize<=5f )
+        {
+            return (true);
+        }
+        else
+        {
+            return (false);
+        }
+        
+        
+    }
+
+    public float GetHangover()
     {
         if (MoveDirection == MoveDirection.Z)
         {
