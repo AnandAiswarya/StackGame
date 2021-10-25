@@ -1097,19 +1097,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1554387200, guid: 633a1e3825e2f6e4c81ef8bf448d11cd, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -4.287586
+      value: -2.7082558
       objectReference: {fileID: 0}
     - target: {fileID: 1554387200, guid: 633a1e3825e2f6e4c81ef8bf448d11cd, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 24.026257
+      value: 16.506575
       objectReference: {fileID: 0}
     - target: {fileID: 1554387200, guid: 633a1e3825e2f6e4c81ef8bf448d11cd, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.9597414
+      value: 0.9179977
       objectReference: {fileID: 0}
     - target: {fileID: 1554387200, guid: 633a1e3825e2f6e4c81ef8bf448d11cd, type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0.2808853
+      value: -0.39658588
       objectReference: {fileID: 0}
     - target: {fileID: 1554387200, guid: 633a1e3825e2f6e4c81ef8bf448d11cd, type: 3}
       propertyPath: m_LocalRotation.y
@@ -1121,7 +1121,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1554387200, guid: 633a1e3825e2f6e4c81ef8bf448d11cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: -32.626003
+      value: -46.730003
       objectReference: {fileID: 0}
     - target: {fileID: 1585089170, guid: 633a1e3825e2f6e4c81ef8bf448d11cd, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1214,7 +1214,7 @@ PrefabInstance:
     - target: {fileID: 6627717572286688499, guid: 633a1e3825e2f6e4c81ef8bf448d11cd,
         type: 3}
       propertyPath: m_RotationOffsets.Array.data[0].x
-      value: 32.626144
+      value: 46.729843
       objectReference: {fileID: 0}
     - target: {fileID: 6627717572286688499, guid: 633a1e3825e2f6e4c81ef8bf448d11cd,
         type: 3}
@@ -1224,12 +1224,12 @@ PrefabInstance:
     - target: {fileID: 6627717572286688499, guid: 633a1e3825e2f6e4c81ef8bf448d11cd,
         type: 3}
       propertyPath: m_TranslationOffsets.Array.data[0].y
-      value: 16.5649
+      value: 13.875275
       objectReference: {fileID: 0}
     - target: {fileID: 6627717572286688499, guid: 633a1e3825e2f6e4c81ef8bf448d11cd,
         type: 3}
       propertyPath: m_TranslationOffsets.Array.data[0].z
-      value: -17.923409
+      value: -9.342292
       objectReference: {fileID: 0}
     - target: {fileID: 9184605373608753297, guid: 633a1e3825e2f6e4c81ef8bf448d11cd,
         type: 3}
